@@ -20,13 +20,13 @@
 No Easypanel, vá para a aba "Environment" e adicione:
 
 ```
-VITE_API_URL=https://seu-backend.easypanel.host/api
+VITE_API_URL=https://outros-primazzo-back.8a2h9d.easypanel.host/api
 ```
 
 **IMPORTANTE**:
 - Use a URL completa do backend (incluindo `https://`)
 - Adicione `/api` no final
-- Exemplo: `https://primazzo-viewer-api.easypanel.host/api`
+- A URL correta do backend é: `https://outros-primazzo-back.8a2h9d.easypanel.host/api`
 
 ### 4. Configurar Domínio
 

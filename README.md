@@ -32,12 +32,12 @@ cp .env.example .env
 
 **Desenvolvimento:**
 ```
-VITE_API_URL=http://localhost:3001
+VITE_API_URL=http://localhost:3001/api
 ```
 
 **Produção:**
 ```
-VITE_API_URL=https://seu-backend.easypanel.host
+VITE_API_URL=https://outros-primazzo-back.8a2h9d.easypanel.host/api
 ```
 
 ## Desenvolvimento
