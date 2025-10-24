@@ -3,11 +3,17 @@ import axios from 'axios'
 import './App.css'
 import Login from './Login'
 
-const API_URL = import.meta.env.VITE_API_URL || '/api'
+// Normalizar URL: remover barras duplicadas
+const normalizeUrl = (url) => {
+  if (!url) return url
+  return url.replace(/([^:]\/)\/+/g, '$1')
+}
+
+const API_URL = normalizeUrl(import.meta.env.VITE_API_URL) || '/api'
 
 // Debug: verificar qual URL está sendo usada
-console.log('🔍 [App] VITE_API_URL:', import.meta.env.VITE_API_URL)
-console.log('🔍 [App] API_URL final:', API_URL)
+console.log('🔍 [App] VITE_API_URL (original):', import.meta.env.VITE_API_URL)
+console.log('🔍 [App] API_URL (normalizada):', API_URL)
 console.log('🔍 [App] Todas as env vars:', import.meta.env)
 
 function App() {
