@@ -4,6 +4,10 @@ import './Login.css'
 
 const API_URL = import.meta.env.VITE_API_URL || '/api'
 
+// Debug: verificar qual URL está sendo usada
+console.log('🔍 [Login] VITE_API_URL:', import.meta.env.VITE_API_URL)
+console.log('🔍 [Login] API_URL final:', API_URL)
+
 function Login({ onLogin }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')

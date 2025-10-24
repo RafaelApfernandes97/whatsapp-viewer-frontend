@@ -5,6 +5,11 @@ import Login from './Login'
 
 const API_URL = import.meta.env.VITE_API_URL || '/api'
 
+// Debug: verificar qual URL está sendo usada
+console.log('🔍 [App] VITE_API_URL:', import.meta.env.VITE_API_URL)
+console.log('🔍 [App] API_URL final:', API_URL)
+console.log('🔍 [App] Todas as env vars:', import.meta.env)
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [contatos, setContatos] = useState([])

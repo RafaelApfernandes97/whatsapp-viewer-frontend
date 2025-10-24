@@ -15,6 +15,10 @@ RUN npm ci
 # Copiar código fonte
 COPY . .
 
+# Aceitar variável de ambiente no build
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
+
 # Build do frontend (Vite)
 RUN npm run build
 
